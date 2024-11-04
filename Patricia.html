@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        header {
+            background: #333;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background: #555;
+            border-radius: 4px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 3rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0073e6;
+        }
+
+        /* Buttons */
+        .btn {
+            background: #0073e6;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #005bb5;
+        }
+
+        /* Home Section */
+        #home {
+            background: #f4f4f4;
+            padding: 5rem 0;
+        }
+
+        #home h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        #home p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* Card Layouts for Projects and Experience */
+        .card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #0073e6;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
+            display: grid;
+            gap: 1rem;
+            text-align: left;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #0073e6;
+            outline: none;
+        }
+
+        form button {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #005bb5;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/Users/cliq-tech/Desktop/Continous-Delivery-Integration/team assignment/index.html">BACK TO HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hello, I'm Patricia Okletey</h1>
+        <p>Empowering Financial and Technology Inclusion</p>
+        <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm very passionate about technology.</p>
+        <p>Fun Fact: I like reading.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Project Title</h3>
+            <p>Description and your role in this project.</p>
+        </div>
+        <!-- Add more projects similarly -->
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>Role at Organization</h3>
+            <p>Worked as the project manager.</p>
+        </div>
+        <!-- Add more experiences similarly -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
