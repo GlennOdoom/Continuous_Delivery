@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlene's Portfolio</title>
+  <style>
+    /* Reset default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+    }
+
+    body {
+      background-color: #FAF3F0; /* Light beige */
+      color: #4A4A4A;
+      line-height: 1.6;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    /* Header */
+    header {
+      background-color: #FADADD; /* Pastel pink */
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4A4A4A;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #C27BA0; /* Muted mauve */
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #FAE1E1; /* Light pastel pink */
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    /* About Section */
+    #about {
+      background-color: #FFF7F1; /* Light beige */
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    #about img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 3px solid #FADADD;
+      margin-bottom: 1rem;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    #about p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    button {
+      background-color: #FADADD;
+      border: none;
+      padding: 0.5rem 1rem;
+      color: #4A4A4A;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #F4B6C2;
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+      background-color: #FAF3F0;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    #portfolio h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    /* Blog Section */
+    #blog {
+      background-color: #FFF7F1;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    #blog h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #FAE1E1;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #F4B6C2;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: #FADADD;
+      border: none;
+      padding: 0.5rem 1rem;
+      color: #4A4A4A;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #F4B6C2;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #FADADD;
+      color: #4A4A4A;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Hello, I'm Charlene</h1>
+    <p>A Sustainability Enthusiast</p>
+  </section>
+
+  <section id="about">
+    <img src="C:\Users\HP\OneDrive\Desktop\CFPhoto.jpg" alt="Charlene's Photo">
+    <h2>About Me</h2>
+    <p>Computer Science Senior at Ashesi University | Front-end Developer | Creative Mind.</p>
+    <button>Download CV</button>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <!-- Portfolio items will go here -->
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <!-- Blog previews will go here -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Charlene. All rights reserved.</p>
+  </footer>
+</body>
+</html>
